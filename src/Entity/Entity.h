@@ -20,6 +20,7 @@ public:
     virtual ~Entity() = default;
     virtual void Tick(ConsoleUI& ui) = 0;
     virtual void showStatus(ConsoleUI& ui) const = 0;
+    virtual char GetSymbol() const = 0;
     std::string GetName() {return name;};
     Position2D GetPosition() const { return position; }
     void SetPosition(Position2D position) { position = position; }
